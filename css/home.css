@@ -1,0 +1,683 @@
+*{box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+    background-color:#0F1026 ;
+    display: flex;
+    flex-direction: column;
+    color: #CCCCD3;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.logo{
+    height: 135px;
+    
+}
+
+.otroVioleta{
+	background-color: #9712A4;
+    opacity: 1;
+	
+	
+}
+
+
+
+
+
+/*boton agregado*/
+
+
+
+  /*cierra boton*/
+
+
+.sobreNosotros{
+    width:80%;
+    height: 300px;
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+ margin-top: 100px;
+ 
+
+}
+
+h1{
+    align-self: flex-start;
+}
+/*visualizacion de cursos abre*/
+.contCursos{
+    width: 70%;
+    height: 400px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+   
+}
+.opciones{
+    width: 30%;
+    height: 150px;
+  
+    display: flex;
+  justify-content: center;
+}
+.ImgsCursos{
+    width: 50%;
+    height: 100%;
+}
+ /*visualizacion de cursos cierra*/
+
+/*experiencias dev abre */
+.experienciasDev{
+    width: 90%;
+    height: 361px;
+   
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+	margin-top: 80px;
+}
+
+
+
+.cajasExpe{
+    width:100%;
+    height: 320px;
+    border-radius: 45% 55% 34% 66% / 60% 39% 61% 40%  ;
+    background: linear-gradient(90deg, rgb(84, 15, 130) 0%, rgb(186, 0, 196) 100%);
+    display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   text-align: center;
+   box-shadow: -1px 3px 67px 0px rgba(67, 67, 67, 0.65);
+   
+}
+.imgDev{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+}
+.cajasExpe> p{
+  padding-bottom: 40px;
+}
+/*experiencias dev cierra */
+
+  /*footer abre*/
+  footer{
+      width: 100%;
+      height: 150px;
+     display: flex;
+     flex-direction:column;
+     
+     color:#9712A4;
+     background-color:white;
+  }
+
+  .padreFooter{
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-around;
+	  margin-top: 15px;
+	  
+  }
+  
+  .divsFooter{
+      text-align: center;
+	  margin-top: 10px;
+	  font-size: 14px;
+	   
+  }
+ 
+  .logoFooter{
+    width:140px;
+    height: 80px;
+	margin-left: 22px;
+	margin-bottom: 8px;
+}
+ .divRedes{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+ }
+
+  h5{
+      width:30%
+  }
+  ul{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+  }
+
+
+
+
+
+
+
+  nav {
+	width: 100%;
+	height: 65px;
+	background-color: white;
+	display: flex;
+	align-content: center;
+	box-shadow: 0 15px 25px 0 rgb(0,0,0,0.2),
+				0 -15px 25px 0 rgb(0,0,0,0.2);
+	position:sticky;
+	top:0px;
+	z-index: 6;
+}
+
+.rutas{
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	font-size: 60px;
+}
+@media (max-width: 600px) {
+
+	.hmbBoton {
+		position: absolute;
+		margin: 13px 0 0 10px;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 7px;
+	}
+
+
+	.hmbBoton:hover .lineOpen{
+		background-color: white;
+	}
+
+
+	.hmbBoton:hover .Cross{
+		background-color: white;
+	}
+
+	.line {
+		transition: 300ms;
+		border-radius: 3px;
+		margin-top: -22px;
+		width: 30px;
+		height: 5px;
+		background-color: #9712A4;
+		box-shadow: 0 10px 0 0 #9712A4,  0 20px 0 0 #9712A4;
+	}
+
+	.lineOpen {
+		transition: 100ms;
+		transform: rotate(45deg);
+		border-radius: 3px;
+		width: 30px;
+		height: 5px;
+		background-color: white;
+
+	}
+
+	.Cross {
+		display: none;
+		transition: 100ms;
+		transform: rotate(90deg);
+		border-radius: 3px;
+		width: 30px;
+		height: 5px;
+		background-color: white;
+	}
+	nav>.seo{
+		display:none
+		
+	}
+	
+	.menuMobile {
+		background-color: #9712A4;
+		border-radius:50%;
+		width: 400px;
+		height: 350px;
+		margin: -40px 0 0 -150px;
+		display: none;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		z-index: 0;
+		box-shadow: 10px 10px 10px 0 rgb(0,0,0,0.2),
+					0 0 5px 5px rgb(0,0,0,0.15);
+	}
+
+	.menuMobile ul {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin: 0 -80px -100px 0;
+		}
+
+	.menuMobile li {
+		display: flex;
+		background-color: #9712A4;
+		background-image: transparent;
+		padding: 15px;
+		border-radius: 5px;
+		margin-bottom:20px;
+	}
+
+    .btnLogin a{
+        margin-bottom: 35px;
+       
+    }
+
+   
+
+	.menuMobile li:hover {
+		display: flex;
+		background-color: white;
+		padding: 10px;
+		border-radius: 5px;
+		margin-bottom: 30px;
+	}
+
+	.menuMobile li:hover a {
+		text-decoration: none;
+		user-select: none;
+		color: #9712A4;
+		font-size: 18px;
+	}
+
+	.menuMobile ul a {
+		text-decoration: none;
+		user-select: none;
+		color: black;
+		font-family: 'Mulish', sans-serif;
+	}
+
+	.menuWeb {
+		display: none;
+	}
+
+	footer{
+		height: fit-content;
+	   display: flex;
+	   flex-direction: column;
+	   align-items: center;
+	   color:#9712A4;
+	   background-color:white;
+	}
+
+	.padreFooter{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		margin-top: 8px;
+
+		
+	}
+
+	.divsFooter {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+
+	.cositas{
+    
+		width: 100%;
+		height: 656px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.logito,.botoncito{
+		width: 310px;
+		height: 60px;
+		
+	}
+
+	.imgDev{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+	   
+	}
+	.cajasExpe p{
+	font-size: 12px;
+	}
+
+	.experienciasDev{
+		height: 200px;
+	
+	}
+
+	.cajasExpe{
+		width:100%;
+		height: 180px;
+		border-radius: 45% 55% 34% 66% / 60% 39% 61% 40%  ;
+		background: linear-gradient(90deg, rgb(84, 15, 130) 0%, rgb(186, 0, 196) 100%);
+		display:flex;
+	   flex-direction: column;
+	   align-items: center;
+	   justify-content: space-evenly;
+	   text-align: center;
+	   box-shadow: -1px 3px 67px 0px rgba(67, 67, 67, 0.65);
+	   
+	}
+
+	.experiencias{
+		text-align: center;
+		padding: 15px;
+		font-size: 19px;
+		
+	}
+
+	.textExp{
+		
+		text-align: center;
+		font-size: 25px;
+		color: white;
+	}
+
+	.textoCursos{
+		text-align: center;
+	}
+
+
+	
+}
+
+@media (min-width: 600px) {
+
+	header {
+		transition: 500ms;
+		height: 150px;
+	}
+
+	.menuMobile {
+		display: none;
+	}
+
+	.menuMobile ul a {
+		display: none;
+	}
+
+	.menuWeb {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		height: 50px;
+		width: 100%;
+		margin-top: 8px;
+	}
+
+	.menuWeb ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		}
+
+	.menuWeb li {
+		transition: 500ms;
+		display: flex;
+		background-color: white;
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+
+	.menuWeb li:hover {
+		transition: 500ms;
+		background-color: #9812a4b8;
+		
+	}
+
+	.menuWeb li:hover a {
+		color: white;
+	}
+
+	.menuWeb ul a {
+		text-decoration: none;
+		user-select: none;
+		color: #9712A4;
+		font-family: 'Mulish', sans-serif;
+	}
+
+}
+
+
+
+/* cursos */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: #F1FAFF;
+}
+
+.container__card{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.card__father{
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.card{
+    width: 310px;
+    height: 440px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card__front,
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: white;
+}
+
+.body__card_front{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+	
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+	
+}
+
+.body__card_back{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.body__card_back p{
+    margin-top: 30px;
+    font-size: 20px;
+	color: #0F1026;
+}
+.body__card_back h1{
+	color: #0F1026;
+}
+
+.body__card_back input{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+}
+
+.body__card_back input:hover{
+    box-shadow: 1px 1px 30px 0px #449de6;
+}
+.curso .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.curso .box-container .box{
+    width: 35rem;
+    border: .1rem solid rgba(0,0,0,.3);
+    position: relative;
+    margin: 1.5rem;
+}
+.curso .box-container .box img{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+.curso .box-container .box .content{
+    padding: 1rem;
+}
+.curso .box-container .box .content .stars i{
+    color: #f39c12;
+    font-size: 1.7rem;
+    padding: 1rem .1rem;
+}
+
+.curso .box-container .box .content .title{
+    color: #444;
+    font-size: 2.1rem;
+}
+.curso .box-container .box .content .title:hover{
+    text-decoration: underline;
+}
+
+.curso .box-container .box .content p{
+    padding: 1rem 0;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.curso .box-container .box .content .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .5rem;
+    border-top: .1rem solid rgba(0,0,0,.3);
+}
+.curso .box-container .box .content .info h3{
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: #666;
+}
+.curso .box-container .box .content .info h3 i{
+    color: #f39c12;
+}
+
+.curso .box-container .box .price{
+    position: absolute;
+    top: 16rem;
+    right: 1rem;
+    height: 8rem;
+    width: 8rem;
+    line-height: 8rem;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--gradient);
+    color: #fff;
+    font-size: 3rem;
+}
+
+.textoCursos{
+	margin-top: 56px;
+	font-size: 25px;
+	
+}
+
+
+.experiencias{
+	margin:80px;
+	text-align: center;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.textCard{
+	color: #444;
+}
+
+
+.centrar{
+	text-align: center;
+}
+
